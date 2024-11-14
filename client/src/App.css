@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Center the entire login-page div on the screen */
+body, html {
+  height: 100%;
+  margin: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #f3f4f6; /* Soft background color */
+}
+
+.login-page {
+  background-color: white;
+  border-radius: 12px;
+  padding: 60px 50px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.login-page h2 {
+  color: #444;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 1px;
+}
+
+.login-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-page input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 18px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.login-page input:focus {
+  border-color: #9a36c2;
+  box-shadow: 0 0 5px rgba(154, 54, 194, 0.3);
+  outline: none;
+}
+
+.login-page button {
+  background-color: #bd52eb;
   color: white;
+  font-family: 'Times New Roman', Times, serif;
+  border: none;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
 }
 
-.App-link {
-  color: #61dafb;
+.login-page button:hover {
+  background-color: #8723ac;
+  transform: translateY(-2px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-page button:active {
+  transform: translateY(1px);
+}
+
+.login-page p {
+  color: red;
+  font-size: 16px;
+  margin-top: 20px;
+  font-weight: 500;
 }

@@ -15,3 +15,9 @@ This is a simple web-based attendance management system. It includes:
 - **docs**: Contains screenshot.
 
 ---
+## Test Credentials
+
+- **username**: admin
+- **password**:password
+
+---
